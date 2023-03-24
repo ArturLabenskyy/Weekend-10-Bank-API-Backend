@@ -1,14 +1,14 @@
 {
-	"name": "shops-api",
+	"name": "bank-api",
 	"version": "1.0.0",
-	"description": "Virtual mall api",
+	"description": "Bank API",
 	"main": "server.js",
 	"type": "module",
 	"scripts": {
 		"start": "node server.js",
 		"dev": "nodemon server.js"
 	},
-	"author": "Ori Baram",
+	"author": "Artur Labenskyy",
 	"license": "MIT",
 
 	"dependencies": {
