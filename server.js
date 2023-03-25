@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import colors from "colors";
 import morgan from "morgan";
+import cors from "cors";
 
 import accounts from "./routes/accountsRoutes.js";
 import users from "./routes/usersRoutes.js";
@@ -15,6 +16,8 @@ dotenv.config({ path: "./config/config.env" });
 connectDB();
 
 const app = express();
+
+app.use(cors());
 
 // Body parser middleware
 app.use(express.json());
